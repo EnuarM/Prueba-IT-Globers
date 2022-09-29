@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.css';
+import ControlledCarousel from './components/carousel/Carousel';
+import Productdescription from './components/productdescription/Productdescription';
+import Productimg from './components/productimg/Productimg';
+import umbrellasbg from './assets/umbrellasbg.jpg'
+import umbrellaimg from './assets/umbrellaimg.png';
+import pufimg from './assets/pufimg.png'
+import pufbg from './assets/pufbg.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style.main}>
+      <ControlledCarousel/>      
+        <div className={style.containers}>
+          <Productimg img={umbrellasbg} button/>
+          <Productdescription img={umbrellaimg} title="Pufi RAIN" description="Descripcion del producto. Este es un texto simulado." buttontitle="> VER MAS"/>          
+        </div>
+        <div className={style.containers}>
+          <Productdescription img={pufimg} title="Pufi PUFF" description="Descripcion del producto. Este es un texto simulado." buttontitle="> VER MAS"/>          
+          <Productimg img={pufbg}/>
+        </div>
+        <div className={style.containers}>
+          <Productimg img={umbrellasbg}/>
+          <Productdescription img={umbrellaimg} title="Pufi RAIN" description="Descripcion del producto. Este es un texto simulado." buttontitle="> VER MAS"/>          
+        </div>
+        <div className={style.containers}>
+          <Productdescription img={pufimg} title="Pufi PUFF" description="Descripcion del producto. Este es un texto simulado." buttontitle="> MAS INFO"/>          
+          <Productimg img={pufbg}/>
+        </div>
     </div>
   );
 }
