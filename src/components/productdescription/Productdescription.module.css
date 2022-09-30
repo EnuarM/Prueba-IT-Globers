@@ -37,3 +37,7 @@ hr{
     letter-spacing: 4px;
     font-weight: 500;
 }
+
+.main button:hover{
+    transform: scale(1.2);
+}

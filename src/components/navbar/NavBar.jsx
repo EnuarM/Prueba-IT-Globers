@@ -6,37 +6,55 @@ import umbrella from '../../assets/umbrella.png';
 import bag from '../../assets/shopping-bag.png';
 import nap from '../../assets/sleep.png';
 
+
 export default function NavBar() {
+
+  function scrollToRain(){
+    window.scroll({top: 800, behavior:'smooth'});
+};
+
+function scrollToPuff(){
+    window.scroll({top: 1300, behavior:'smooth'});
+};
+
+function scrollToCart(){
+    window.scroll({top: 2000, behavior:'smooth'});
+};
+
+function scrollToNap(){
+    window.scroll({top: 2500, behavior:'smooth'});
+};
+
   return (
     <div className={style.main}>
       <img src={logo} alt='logo' className={style.logo}/>
       {/* MENU */}
-        <div className={style.li_navbar}>
-          <div className={style.menucontainer}>
+        <div  className={style.li_navbar}>
+          <div onClick={scrollToPuff} className={style.menucontainer}>
             <img src={puf} alt='puf'/>
             <h2>PUFI PUFF</h2>                       
           </div>
-          <div className={style.menucontainer}>
-          <img src={umbrella} alt='puf'/>
+          <div onClick={scrollToRain} className={style.menucontainer}>
+          <img src={umbrella} alt='umbrella'/>
             <h2>PUFI RAIN</h2>                       
           </div>
-          <div className={style.menucontainer}>
-            <img src={bag} alt='puf'/>
+          <div onClick={scrollToCart} className={style.menucontainer}>
+            <img src={bag} alt='bag'/>
             <h2>PUFI CART</h2>                       
           </div>
-          <div className={style.menucontainer}>
-            <img src={nap} alt='puf'/>
+          <div onClick={scrollToNap} className={style.menucontainer}>
+            <img src={nap} alt='nap'/>
             <h2>PUFI NAP</h2>                       
           </div>
         </div>
         {/* FIN MENU */}
       <div className={style.useraccess}>      
           <select>
-            <option>MI CUENTA</option>
+            <option>Mi Cuenta</option>
             <option>Perfil</option>
             <option>Cerrar Sesion</option>
           </select>
-        <h3>MI COMPRA</h3>
+        <h3>Mi Compra</h3>
       </div>
     </div>
   )

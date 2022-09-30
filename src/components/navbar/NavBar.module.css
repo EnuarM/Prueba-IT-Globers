@@ -35,6 +35,11 @@
     padding: 0;
 }
 
+.menucontainer:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .menucontainer img{
     width: 50px;
     height: 50px;
@@ -54,16 +59,25 @@
 }
 
 .useraccess select{
-    background: none;
+    background: transparent;
+    appearance: none;
+    outline: none;
     border: none;
     box-shadow: none;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.useraccess select option{
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;   
 }
 
 .useraccess h3{
     color: rgb(255, 255, 255);    
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
+    margin-bottom: 0;
 }

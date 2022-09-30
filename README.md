@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# PRUEBA TECNICA IT GLOBERS
+Este proyecto fue creado con React.js y Redux. Utilice librerias como Formik, para realizar la validación del campo email de la suscripcion al newsletter. Utilicé React-Bootstrap, para darle estilos a algunos componentes y para el carrusel. Para la alerta implementé la libreria de sweet alert para darle algo de estilos y personalizacion al mensaje de suscripción exitosa de los usuarios al boletín.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Redux
+Para este requisito realicé una acción que va a almacenar en un estado, todos los correos de las personas que se han suscrito al boletin. Con la ayuda del Redux DevTools del chrome, podemos ver como cada que se hace submit de un correo en el input, se van almacenando en el estado del reducer. Esta accion estaria lista para ser conectada con una DB para almacenar permanentemente los correos de los suscriptores, y asi hacer la entrega del boletin a cada uno de ellos.
 
-## Available Scripts
+## Para correr el proyecto...
 
-In the project directory, you can run:
+### `npm install`
+
+Para instalar todas las dependecias necesarias para correr el proyecto.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para ejecutar el proyecto. Abre en [http://localhost:3000](http://localhost:3000) para verlo en el buscador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Agradezco a ustedes por la oportunidad que me brindan de poder conseguir mi primer empleo IT. Estoy muy motivado a seguir aprendiendo mucho y mejorar mis habilidades técnicas y blandas, y que mejor que de la mano de ustedes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Muchas Gracias !!!
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
